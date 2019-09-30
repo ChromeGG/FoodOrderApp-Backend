@@ -107,4 +107,6 @@ hs_err_pid*
 
 mvnw
 mvnw.cmd
+*.iml
+HELP.md
 
