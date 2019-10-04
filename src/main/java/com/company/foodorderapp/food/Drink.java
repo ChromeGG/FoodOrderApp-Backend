@@ -1,11 +1,13 @@
 package com.company.foodorderapp.food;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import java.io.Serializable;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
 @NoArgsConstructor
