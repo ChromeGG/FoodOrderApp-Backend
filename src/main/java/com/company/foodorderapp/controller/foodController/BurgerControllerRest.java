@@ -5,14 +5,13 @@ import com.company.foodorderapp.repository.BurgerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Comparator;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/burger")
+@RequestMapping("/api/burgers")
 public class BurgerControllerRest {
 
     private final BurgerRepository burgerRepo;

@@ -2,6 +2,7 @@ package com.company.foodorderapp;
 
 import com.company.foodorderapp.food.Burger;
 import com.company.foodorderapp.repository.BurgerRepository;
+import com.company.foodorderapp.services.DatabaseFillService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -16,9 +17,13 @@ public class FoodOrderAppApplication {
 
         BurgerRepository repo = ctx.getBean(BurgerRepository.class);
 
-        Burger burger = new Burger("Krabo-burger", "chuj Ci na kurwe", 21.37, false, "Maxxx");
+        DatabaseFillService dataFill = new DatabaseFillService(repo);
 
-        repo.save(burger);
+        dataFill.fillDatabase();
+
+//        Burger burger = new Burger("Krabo-burger", "chuj Ci na kurwe", 21.37, false, "Maxxx");
+//
+//        repo.save(burger);
 
 
     }
