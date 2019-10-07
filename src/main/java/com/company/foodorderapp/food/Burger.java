@@ -15,7 +15,6 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @NoArgsConstructor
-
 public class Burger extends Product implements Serializable {
 
     private static final long serialVersionUID = 8539936152170847419L;

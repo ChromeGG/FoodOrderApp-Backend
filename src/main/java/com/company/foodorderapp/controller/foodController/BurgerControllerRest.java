@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/api/food/burgers")
 public class BurgerControllerRest {
 
-    private final BurgerRepository burgerRepo;
+    private BurgerRepository burgerRepo;
 
     @Autowired
     public BurgerControllerRest(BurgerRepository burgerRepository) {
