@@ -9,7 +9,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class FoodOrderAppApplication {
 
     public static void main(String[] args) {
-//        SpringApplication.run(FoodOrderAppApplication.class, args);
 
         ConfigurableApplicationContext ctx = SpringApplication.run(FoodOrderAppApplication.class, args);
 
@@ -18,4 +17,5 @@ public class FoodOrderAppApplication {
 
         dataFill.fillDatabase();
     }
+
 }
