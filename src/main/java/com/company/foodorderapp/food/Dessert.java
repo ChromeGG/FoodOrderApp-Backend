@@ -11,13 +11,15 @@ import java.io.Serializable;
 @Entity
 @Data
 @NoArgsConstructor
-public class Drink extends Product implements Serializable {
+public class Dessert extends Product implements Serializable {
+
     private static final long serialVersionUID = 8539936152170847419L;
 
-    public Drink(String name, String description, Double price, String size) {
+    String size;
+
+    public Dessert(String name, String description, Double price, String size) {
         super(name, description, price);
         this.size = size;
     }
 
-    private String size;
 }
