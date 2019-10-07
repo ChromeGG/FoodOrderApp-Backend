@@ -1,8 +1,6 @@
 package com.company.foodorderapp.controller.foodController;
 
-import com.company.foodorderapp.food.Burger;
-import com.company.foodorderapp.food.Drink;
-import com.company.foodorderapp.repository.BurgerRepository;
+import com.company.foodorderapp.food.Dessert;
 import com.company.foodorderapp.repository.DessertRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -24,16 +22,16 @@ public class DessertControllerRest {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Drink> getBurgers(@RequestParam(defaultValue = "name") String orderBy) {
-        List<Drink> drinks = dessertRepo.findAll();
+    public List<Dessert> getBurgers(@RequestParam(defaultValue = "name") String orderBy) {
+        List<Dessert> desserts = dessertRepo.findAll();
         if ("name".equals(orderBy)) {
-            drinks.sort(Comparator.comparing(Drink::getPrice));
+            desserts.sort(Comparator.comparing(Dessert::getPrice));
         }
-        return drinks;
+        return desserts;
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Drink> getBurger(@PathVariable Long id) {
+    public ResponseEntity<Dessert> getBurger(@PathVariable Long id) {
         return dessertRepo.findById(id).map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 

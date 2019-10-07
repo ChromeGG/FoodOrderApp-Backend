@@ -8,7 +8,6 @@ import com.company.foodorderapp.repository.DessertRepository;
 import com.company.foodorderapp.repository.DrinkRepository;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.aspectj.apache.bcel.util.Repository;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.ArrayList;
@@ -50,7 +49,7 @@ public class DatabaseFillService {
     private void insertDrinks() {
         List<Drink> drinksToSave = new ArrayList<>();
 
-        Drink drink1 = new Drink("Woda Niegazowana", "Piwniczanka Zdrój, liść mięty, cytryna", 4.00, "0.5L");
+        Drink drink1 = new Drink("Woda Niegaz.", "Piwniczanka Zdrój, liść mięty, cytryna", 4.00, "0.5L");
         Drink drink2 = new Drink("Woda Gaz", "Polaris Zdrój, liść mięty, cytryna", 5.00, "0.5L");
         Drink drink3 = new Drink("CocaCola", "Klasyczna cocacola, lodówka", 7.00, "1L");
         Drink drink4 = new Drink("Sprite", "Sprite, lodówka", 6.00, "1L");
@@ -64,7 +63,6 @@ public class DatabaseFillService {
         drinksToSave.add(drink5);
 
         drinkRepo.saveAll(drinksToSave);
-
     }
 
     private void insertBurgers() {

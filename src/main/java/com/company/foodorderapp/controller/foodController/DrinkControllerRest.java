@@ -1,6 +1,5 @@
 package com.company.foodorderapp.controller.foodController;
 
-import com.company.foodorderapp.food.Burger;
 import com.company.foodorderapp.food.Drink;
 import com.company.foodorderapp.repository.DrinkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
