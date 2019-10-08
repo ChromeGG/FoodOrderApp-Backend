@@ -54,7 +54,7 @@ public class DatabaseFillService {
         Drink drink3 = new Drink("CocaCola", "Klasyczna cocacola, lodówka", 7.00, "0.33L");
         Drink drink4 = new Drink("Sprite", "Sprite, lodówka", 6.00, "0.33L");
         Drink drink5 = new Drink("Kawa", "Siekiera, 95% kofeiny", 4.00, "0.25L");
-        Drink drink6 = new Drink("Koktajl", "Cebula, ser, żółć", 6.00, "0.4L");
+        Drink drink6 = new Drink("Koktajl", "Cebula, ser, musztarda, żółć", 6.00, "0.4L");
 
         drinksToSave.add(drink1);
         drinksToSave.add(drink2);
