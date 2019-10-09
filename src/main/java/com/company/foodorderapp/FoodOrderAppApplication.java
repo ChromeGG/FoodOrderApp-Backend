@@ -17,5 +17,11 @@ public class FoodOrderAppApplication {
 
         dataFill.fillDatabase();
     }
+//
+//    @Bean
+//    WebMvcConfigurer webMvcConfigurer() {
+//        return new WebMvcConfigurer() {
+//        }
+//    }
 
 }
