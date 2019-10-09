@@ -24,6 +24,8 @@ public class Product {
     private String description;
     private Double price;
 
+    private String imageUrl;
+
     public Product(String name, String description, Double price) {
         this.name = name;
         this.description = description;
