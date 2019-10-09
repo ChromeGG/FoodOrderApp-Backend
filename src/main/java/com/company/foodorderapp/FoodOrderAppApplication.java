@@ -4,6 +4,8 @@ import com.company.foodorderapp.services.DatabaseFillService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class FoodOrderAppApplication {
@@ -17,5 +19,10 @@ public class FoodOrderAppApplication {
 
         dataFill.fillDatabase();
     }
+
+//    @Bean
+//    WebMvcConfigurer webMvcConfigurer() {
+//        re
+//    }
 
 }
