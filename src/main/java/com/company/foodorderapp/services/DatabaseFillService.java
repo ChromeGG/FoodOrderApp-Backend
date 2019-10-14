@@ -69,11 +69,11 @@ public class DatabaseFillService {
     private void insertBurgers() {
         List<Burger> burgersToSave = new ArrayList<>();
 
-        Burger burger1 = new Burger("Classic", "bułka, mięso wołowe 180g, sosy, warzywa", 17.00, false, "Średni");
-        Burger burger2 = new Burger("Mexicano", "bułka, mięso wołowe 180g, warzywa, sos serowy, papryczki jalapeno, nachosy", 20.00, false, "Duży");
-        Burger burger3 = new Burger("Wegetariański", "bułka, sosy, warzywa, trawa", 12.00, true, "Mały");
-        Burger burger4 = new Burger("Góral", "bułka, mięso wołowe 180g, sosy, warzywa, oscypek, żurawina", 22.00, false, "Duży");
-        Burger burger5 = new Burger("Serowy", "bułka, 4 sery, sosy", 14.00, true, "Średni");
+        Burger burger1 = new Burger("Classic", "bułka, mięso wołowe 180g, sosy, warzywa", 17.00, "http://10.0.0.12:8080/images/burgers/classic.png", false, "Średni");
+        Burger burger2 = new Burger("Mexicano", "bułka, mięso wołowe 180g, warzywa, sos serowy, papryczki jalapeno, nachosy", 20.00, " ", false, "Duży");
+        Burger burger3 = new Burger("Wegetariański", "bułka, sosy, warzywa, trawa", 12.00, " ", true, "Mały");
+        Burger burger4 = new Burger("Góral", "bułka, mięso wołowe 180g, sosy, warzywa, oscypek, żurawina", 22.00, " ", false, "Duży");
+        Burger burger5 = new Burger("Serowy", "bułka, 4 sery, sosy", 14.00, " ", true, "Średni");
 
         burgersToSave.add(burger1);
         burgersToSave.add(burger2);

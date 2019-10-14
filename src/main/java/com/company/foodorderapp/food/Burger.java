@@ -18,8 +18,8 @@ public class Burger extends Product implements Serializable {
     private Boolean isVegan;
     private String size;
 
-    public Burger(String name, String description, Double price, Boolean isVegan, String size) {
-        super(name, description, price);
+    public Burger(String name, String description, Double price, String imageUrl, Boolean isVegan, String size) {
+        super(name, description, price, imageUrl);
         this.isVegan = isVegan;
         this.size = size;
     }
