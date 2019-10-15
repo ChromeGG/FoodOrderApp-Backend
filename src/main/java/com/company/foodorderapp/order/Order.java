@@ -1,23 +1,26 @@
 package com.company.foodorderapp.order;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
-//@Entity
+@Entity
 @Data
-@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "orders")
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Order implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    OrderAddress address;
-    //Purchaser purchaser; TODO:
+    OrderInfo orderInfo;
 
+//    @OneToOne
+//    CustomerAddress address;
+//    @OneToOne
+//    CustomerInfo customerInfo;
 }
