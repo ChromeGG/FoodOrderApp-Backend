@@ -16,6 +16,8 @@ public class FoodOrderAppApplication {
         dataFill.setRepositories(ctx);
 
         dataFill.fillDatabase();
+
+        System.out.println();
     }
 
 }
