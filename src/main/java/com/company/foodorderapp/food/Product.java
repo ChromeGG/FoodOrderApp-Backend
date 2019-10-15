@@ -26,6 +26,13 @@ public class Product {
 
     private String imageUrl;
 
+    public Product(String name, String description, Double price, String imageUrl) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.imageUrl = imageUrl;
+    }
+
     public Product(String name, String description, Double price) {
         this.name = name;
         this.description = description;

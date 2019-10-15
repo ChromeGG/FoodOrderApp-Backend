@@ -17,8 +17,8 @@ public class Dessert extends Product implements Serializable {
 
     String size;
 
-    public Dessert(String name, String description, Double price, String size) {
-        super(name, description, price);
+    public Dessert(String name, String description, Double price, String imageUrl, String size) {
+        super(name, description, price, imageUrl);
         this.size = size;
     }
 

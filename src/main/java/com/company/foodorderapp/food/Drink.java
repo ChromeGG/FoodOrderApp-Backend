@@ -14,8 +14,8 @@ import java.io.Serializable;
 public class Drink extends Product implements Serializable {
     private static final long serialVersionUID = 8539936152170847419L;
 
-    public Drink(String name, String description, Double price, String size) {
-        super(name, description, price);
+    public Drink(String name, String description, Double price, String imageUrl, String size) {
+        super(name, description, price, imageUrl);
         this.size = size;
     }
 
