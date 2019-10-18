@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Embeddable;
 
+@Embeddable
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@MappedSuperclass
 public class OrderInfo {
 
     String description;
-    Double price;
+    Double value;
 }
