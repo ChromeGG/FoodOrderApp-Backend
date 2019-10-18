@@ -2,6 +2,7 @@ package com.company.foodorderapp.order;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Table(name = "orders")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Order implements Serializable {
 
     @Id
@@ -22,4 +24,8 @@ public class Order implements Serializable {
     CustomerAddress address;
     @Embedded
     CustomerInfo customerInfo;
+
+    public <T> Order(T readValue) {
+
+    }
 }
