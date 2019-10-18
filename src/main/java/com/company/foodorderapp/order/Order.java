@@ -3,10 +3,13 @@ package com.company.foodorderapp.order;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
-@Entity
+//@Entity
 @Data
 @AllArgsConstructor
 @Table(name = "orders")
